@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean name="student" class="com.test.bean.Student" init-method="init" destroy-method="destroy">
+
+        <constructor-arg name="name" value="小明"/>
+        <constructor-arg index="1" value="18"/>
+
+        <property name="name" value="小明"/>
+        <property name="card" ref="card" />
+        <property name="map">
+            <map>
+                <entry key="语文" value="100.0"/>
+                <entry key="数学" value="80.0"/>
+                <entry key="英语" value="92.5"/>
+            </map>
+        </property>
+    </bean>
+    <bean name="card" class="com.test.bean.Card"/>
+    <bean name="aopTest" class="com.test.aop.AopTest"/>
+    <bean name="before" class="com.test.aop.AopTest3"/>
+    <bean name="BImplementation" class="com.test2.impl.BImplementation"/>
+    <aop:config>
+        <aop:pointcut id="test" expression="execution(* com.test.bean.Student.test(String))"/>
+        <aop:aspect ref="aopTest">
+            <aop:before method="before" pointcut-ref="test"/>
+            <aop:after-returning method="after" pointcut-ref="test"/>
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:pointcut id="say" expression="execution(* com.test.bean.Student.say())"/>
+        <aop:advisor advice-ref="before" pointcut-ref="say"/>
+    </aop:config>
+</beans>
+

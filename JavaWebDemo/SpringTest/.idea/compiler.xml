@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MVCTest2" />
+        <module name="SpringTest" />
+        <module name="SpringMVCTest1" />
+        <module name="SpringTest3" />
+        <module name="SpringTest4" />
+        <module name="SpringTest5" />
+        <module name="SpringTest2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BookDemo2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<outer>
+   <!-- <name>阿伟</name>
+    <desc>怎么又在玩电动啊</desc>-->
+    <inner type="1">
+        <name>阿伟</name>
+        <age>10</age>
+        <sex>男</sex>
+    </inner>
+    <inner type="2">
+        <name>杰哥</name>
+        <age>15</age>
+        <sex>女</sex>
+    </inner>
+</outer>

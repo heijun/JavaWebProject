@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="GBK">
+    <title>Title</title>
+</head>
+<body>
+<form action="login" method="post">
+    <label>用户名</label>
+    <input type="text" name="username" >
+    <label>密码</label>
+    <input type="password" name="password" >
+    <div>
+        <label>
+            <input type="checkbox" placeholder="记住我" name="remember-me">
+            记住我
+        </label>
+    </div>
+    <input type="submit" value="登陆">
+</form>
+
+<ul>
+    <li th:each="title, iterStat : ${list}" th:text="${iterStat.index}+'.《'+${title}+'》'"></li>
+</ul>
+</body>
+</html>

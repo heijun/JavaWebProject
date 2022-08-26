@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.example2.mapper.StudentsMapper">
+<resultMap id="test2" type="com.example2.entity.Students">
+    <id column="sid" property="sid"/>
+    <result column="name" property="name"/>
+    <result column="sex" property="sex"/>
+    <association property="teacher" javaType="com.example2.entity.Teacher">
+        <id column="tid" property="tid"/>
+        <result column="tname" property="name"/>
+    </association>
+</resultMap>
+<select id="selectStudent" resultMap="test2">
+select *, teacher.name as tname from student left join teach on student.sid = teach.sid
+                                             left join teacher on teach.tid = teacher.tid
+where teach.tid=#{tid}
+</select>
+</mapper>

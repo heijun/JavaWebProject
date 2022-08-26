@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example2.mapper.StudentMapper">
+<!--    <resultMap id="Test" type="com.example2.entity.Student">
+        <result column="sid" property="sid"/>
+        <result column="name" property="name"/>
+        <result column="sex" property="sex"/>
+        <result column="grade" property="grade"/>
+    </resultMap>
+<select id="selectStudent" resultMap="Test">
+    select * from book.student
+</select>-->
+
+    <select id="selectStudent" resultType="lbwnb">
+        select * from book.student
+    </select>
+
+    <select id="getStudentBySid" resultType="lbwnb" useCache="false">
+            select * from book.student
+    where student.sid=#{sid}
+    </select>
+
+    <insert id="addStudent" parameterType="lbwnb">
+        insert into book.student(name, sex,grade) values(#{name}, #{sex},#{grade})
+    </insert>
+
+    <cache
+            eviction="FIFO"
+            flushInterval="60000"
+            size="512"
+            readOnly="true"/>
+</mapper>

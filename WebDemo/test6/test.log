@@ -1,0 +1,73 @@
+七月 14, 2022 5:28:39 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:41)
+
+七月 14, 2022 5:28:39 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:29:11 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:41)
+
+七月 14, 2022 5:29:11 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:34:00 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:43)
+
+七月 14, 2022 5:34:00 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:34:00 下午 logfile.TestMain5 main
+警告: 我是测试消息3...
+七月 14, 2022 5:36:29 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:43)
+
+七月 14, 2022 5:36:29 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:36:29 下午 logfile.TestMain5 main
+警告: 我是测试消息3...
+七月 14, 2022 5:36:29 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:87)
+
+七月 14, 2022 5:36:29 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:37:15 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:43)
+
+七月 14, 2022 5:37:15 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:37:15 下午 logfile.TestMain5 main
+警告: 我是测试消息3...
+七月 14, 2022 5:37:15 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:88)
+
+七月 14, 2022 5:37:15 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:40:31 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:46)
+
+七月 14, 2022 5:40:31 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:40:31 下午 logfile.TestMain5 main
+警告: 我是测试消息3...
+七月 14, 2022 5:44:02 下午 logfile.TestMain5 main
+严重: 严重的错误
+java.io.IOException: 我就是错误
+	at logfile.TestMain5.main(TestMain5.java:46)
+
+七月 14, 2022 5:44:02 下午 logfile.TestMain5 main
+警告: 警告的内容
+七月 14, 2022 5:44:02 下午 logfile.TestMain5 main
+警告: 我是测试消息3...
